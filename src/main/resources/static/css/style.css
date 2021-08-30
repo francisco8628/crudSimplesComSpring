@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;   /*limpar para não aplicar a a propriedade float na div*/
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    min-width: 1200px;  /*devemos aplicar a minima largura com a largura do center*/
+    background-color: #212343;
+}
+
+.header img{
+    margin: 19px;
+    text-align: center;
+}
+
+.container-banner{
+    width: 100%;   /*o banner vai ter 100% da div*/
+    min-width: 1200px;    /*para não quebrar a pagina*/
+    height: 557px;
+    background-image: url('../images/header_bg.jpg');
+    background-size: cover;     /*cobre toda a area da dic*/
+    background-position: center;  /*posiciona no centro*/
+}
+.container-banner > .center{    /*ataca somente a classe center que estiver no container-banner*/
+height: 100%;                   /*tem que colocar uma altura para o contaner para seus filhos poder erdar*/
+
+}
+.form{
+    width: 400px;    /*autura de 400px*/  
+    height: 100%;    /*pega a altura total da classe mãe que é o cantainer*/
+                                 /*aplica +30px para que fique 15px passando para os outroe elementos*/
+    position: relative; /*aplicação da posição relativa para poder manipular as propriedades top,buttom,left e right*/                             
+    top: -15px;  /*manda subir 15px*/
+    background-color: white;
+    border-width: 12px;
+    padding: 10px;   /*sera o tamanho da borda com opacidade*/
+    background-clip: padding-box;    /*para ativar a opacidade nas bordas*/
+    /*background-origin: tem o mesmo conceito mas serve para imagens*/
+    float: right;     /*coloca o formulario na direita*/
+    border-color: rgba(120,120,120,0.5);
+    border-style: solid;
+    /*border: 12px solid #ccc;  /*aplica uma bora solida preta*/
+    border-radius: 5px;   /*coloca um arendodamento de 5px*/
+    
+}
+.form h2{
+  font-weight: normal;
+  font-size: 20px;
+  color: #999999;
+   
+}
+.input-container{
+    margin-top: 20px;   /*afasta 20px do topo*/
+}
+
+.input-container span, form p{ 
+   display: inline-block; 
+   width: 100%;
+   color: #bbbbbb;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.form p{
+ margin: 20px ;
+
+}
+.input-container input[type=text]{
+    width: 344px;
+    height:  55px;
+    border:  1px solid #ccc;
+    margin-top: 8px;
+}
+
+.form .input-submit-container{
+  text-align:center ;     /*obs devemos encapsular o imput para depois centralizar ele no formulario*/
+}
+
+.form input[type=button]{
+    color: white;
+    font-size: 25px;
+    /*width: 288px;*/
+    height: 56px;
+    background-color:  #363A6D;
+    text-align: center;  
+    border-radius: 2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #4A5097;  /*coloca uma bordar sombrada*/
+    cursor: pointer;
+    margin:  10px;
+  }
+  .form input[type=button]:hover{
+  background-color: #323665;
+}
+.container-list{
+    padding:  30px; /*espaçamento interno */
+    float: left;
+    width: 619px;
+    height: 270px;
+    margin-top: 40px;
+    background-color: rgba(33, 35, 67, 0.7);
+    /*border: 4px solid red;*/
+
+}
+
+.container-list ul{
+    list-style-position: inside; /*coloca a listapara dentro da div(por padrão sempre vem fora*/
+}
+
+.container-list ul li{
+ color: white;
+ margin-top: 18px;    /*distacimento do topo*/
+
+}
+
+.container-2{
+min-width: 1200px;
+padding: 40px 0;
+background-color: #dddddd;
+text-align: center;
+}
+.container-2 h2{
+font-weight: normal;
+
+}
+.container-2 p{
+width: 698px;                /*quando colocamos largura ele funciona como um bloco*/
+display: inline-block;      /*coloca na mesma linha*/
+margin: 15px 0;
+text-align: justify;        /*justifica o texto*/
+}
+
+.arrow{
+    position: relative;
+    top:60px;
+    left:50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+}
+
+.section1{
+    width: 1200;
+    padding: 90px 0;
+}
+
+.section1 h2{
+    text-align: center;
+    color: #462663;   /*cor dA fonte do texto*/
+    font-weight: normal;
+}
+.container-section{
+    margin-top: 40px;
+ }
+
+ .container-section{
+     text-align: center;
+ }
+ .conteiner-single{
+     float: left;            /*coloca a esquerda da div*/
+     width: 33.333%;         /*divide a div e 3 partes*/
+     padding: 30px;          /*da um afastamento de 30px para o proximo elemento*/
+     /*background-color: blue;
+     border: 5px solid black;*/
+    }
+ .conteiner-single p{
+     text-align: justify;
+     padding: 10px 25px;
+ }
+ .conteiner-single img{
+     width: 70px;
+ }
+
+ .footer{
+     padding: 12px 0;
+     border-top: 2px solid #888888;
+     text-align: center;
+     color: #888;
+     background-color:rgba(224, 219, 219, 0.549) ;
+
+ }
+.footer p{
+    margin-top: 12px;
+}
