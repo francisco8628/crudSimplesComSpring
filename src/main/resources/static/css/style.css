@@ -94,8 +94,8 @@ height: 100%;                   /*tem que colocar uma altura para o contaner par
 
 .form input[type=button]{
     color: white;
-    font-size: 25px;
-    /*width: 288px;*/
+    font-size: 20px;
+    width:70px;
     height: 56px;
     background-color:  #363A6D;
     text-align: center;  
@@ -105,7 +105,7 @@ height: 100%;                   /*tem que colocar uma altura para o contaner par
     border-right: 0;
     border-bottom: 5px solid #4A5097;  /*coloca uma bordar sombrada*/
     cursor: pointer;
-    margin:  10px;
+    margin:  2px;
   }
   .form input[type=button]:hover{
   background-color: #323665;
